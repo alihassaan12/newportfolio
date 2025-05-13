@@ -15,6 +15,27 @@ body {
     align-items: center;
 }
 
+.py-100{
+
+  padding-block: 100px;
+}
+
+.py-50{
+
+  padding-block: 50px;
+}
+
+.pt-100{
+
+  padding-top: 100px;
+}
+
+.pt-50{
+
+  padding-top: 50px;
+}
+
+
 .hero-heading{
     font-family: 'CalSansSemiBold' ;
     font-size: 70px;
@@ -30,12 +51,83 @@ body {
     color: #B2B2B2;
 }
 
+.heading{
+  font-family: 'CalSansSemiBold' ;
+  font-size: 57px;
+  line-height:60px;
+  color: white;
+}
+
+.stack-logo-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.stack-logo {
+  flex: 0 1 calc(100% / 7 - 20px);
+  max-width: 100px;
+  height: 100px;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+.sub-heading{
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #B2B2B2;
+}
+
+.about-para{
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin: 30px 0px;
+  font-size: 18px;
+  color: white;
+}
+
+.our-project-heading{
+  font-family: 'CalSansSemiBold' ;
+  font-size: 35px;
+  line-height: 47px;
+  color: white;
+
+}
+
+.our-project-para{
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin: 30px 0px;
+  font-size: 16px;
+  color: white;
+
+}
+
+.project-title{
+  font-family: 'CalSansSemiBold' ;
+  font-size: 30px;
+  line-height: 35px;
+  color: white;
+}
+
+.project-des{
+
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin: 30px 0px;
+  font-size: 16px;
+  color: white;
+}
+
 @font-face {
     font-family: 'CalSansSemiBold' ;
     src: url('./Font/Cal_Sans/CalSans-SemiBold.otf');
 }
 
-.animated-btn {
+.animated-btn-purple {
     margin: 0.5em;
     background: #302EBA;
     color: white;
@@ -46,16 +138,15 @@ body {
     font-family: "Manrope", sans-serif;
     cursor: pointer;
     position: relative;
-    padding: 20px 50px;
     z-index: 1;
     overflow: hidden;
    }
    
-   .animated-btn:hover {
+   .animated-btn-purple:hover {
     color: black;
    }
    
-   .animated-btn:after {
+   .animated-btn-purple:after {
     content: "";
     background: white;
     position: absolute;
@@ -68,12 +159,108 @@ body {
     transition: all 0.5s;
    }
    
-   .animated-btn:hover:after {
+   .animated-btn-purple:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+   .animated-btn-white {
+    margin: 0.5em;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   .animated-btn-white:hover {
+    color: white;
+   }
+
+   .border-top-sec{
+
+    border-top: 1px solid rgba(58, 58, 58, 0.43);
+  
+  }
+  
+   header{
+    margin-bottom: -50px;
+   }
+   
+   .animated-btn-white:after {
+    content: "";
+    background: #302EBA;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+
+   .nav-bar{
+    background-color: #191919;
+    border-radius: 70px;
+   }
+   
+   .animated-btn-white:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+
+
+
+   .animated-btn-border {
+    margin: 0.5em;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   .animated-btn-border:hover {
+    color: black;
+   }
+   
+   .animated-btn-border:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   .animated-btn-border:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
    }
   
+   /* marquee */
+
   .marquee {
     overflow: hidden;
     white-space: nowrap;
@@ -101,4 +288,67 @@ body {
       transform: translateX(-50%);
     }
   }
-  
+
+/* progresbar */
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skill-item {
+  flex: 0 1 calc(25% - 15px); /* 4 per row with spacing */
+  box-sizing: border-box;
+}
+
+.skillbar-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.skills {
+  height: 5px;
+  width: 0px;
+  background-color: #302EBA;
+}
+
+/* swiper */
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 30px;
+}
+
+/* form css */
+
+.form-wrapper {
+  background: linear-gradient(to bottom, #111, #000);
+}
+
+.dark-input {
+  background: #111;
+  border: none;
+  padding: 15px 25px;
+  width: 100%;
+  border-radius: 25px;
+  color: white;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+}
+
+.dark-input::placeholder {
+  color: #ccc;
+}
