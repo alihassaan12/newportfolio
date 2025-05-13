@@ -405,4 +405,50 @@ body {
   background: linear-gradient(to left, #000000, #302EBA);
 }
 
+.work-p-card{
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #111, #000);
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+  padding: 60px 40px;
+}
 
+.work-p-card h1{
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+
+.work-p-card p{
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  background: #ccc !important;
+  opacity: 1 !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 5px !important;
+  transition: background 0.3s !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #302EBA !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important; /* you had #ffff, should be #fff */
+}
+
+.swiper {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+  width: auto; 
+}
