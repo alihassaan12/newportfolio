@@ -7,7 +7,20 @@ var swiper = new Swiper(".projectSlider", {
         clickable: true,
     },
 });
-/////
+
+//////////////////
+
+var swiper = new Swiper(".testimonialsSlider", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+//////////////////
+
 $(window).scroll(function () {
     var hT = $('#skill-bar-wrapper').offset().top,
         hH = $('#skill-bar-wrapper').outerHeight(),
@@ -23,3 +36,4 @@ $(window).scroll(function () {
         });
     }
 });
+

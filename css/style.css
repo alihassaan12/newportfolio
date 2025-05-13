@@ -218,9 +218,6 @@ body {
     transition: all 0.5s;
    }
 
-
-
-
    .animated-btn-border {
     margin: 0.5em;
     background: transparent;
@@ -352,3 +349,60 @@ body {
 .dark-input::placeholder {
   color: #ccc;
 }
+
+.testimonials-card{
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #111, #000);
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+  padding: 60px 40px;
+}
+
+.testimonials-card p{
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.testimonials-card h5{
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
+.testimonials-card h4{
+  font-family: 'CalSansSemiBold' ;
+  font-size: 16px;
+  color: white;
+
+}
+
+.star{
+  color: #FFC800;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.cta-heading{
+  font-family: 'CalSansSemiBold' ;
+  font-size: 55px;
+  line-height: 60px;
+  color: white;
+
+}
+
+.cta-para{
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+}
+
+.bg-gradient-purple{
+  background: linear-gradient(to left, #000000, #302EBA);
+}
+
+
