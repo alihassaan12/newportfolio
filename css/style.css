@@ -1,61 +1,55 @@
 body {
-    margin: 0;
-    padding: 0;
-
-  }
-
-
-.hero-bg-img{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 0.5)), url('../images/image 65.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.py-100{
+.hero-bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.81), rgba(0, 0, 0, 0.5)),
+    url("../images/image 65.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.py-100 {
   padding-block: 100px;
 }
 
-.py-50{
-
+.py-50 {
   padding-block: 50px;
 }
 
-.pt-100{
-
+.pt-100 {
   padding-top: 100px;
 }
 
-.pt-50{
-
+.pt-50 {
   padding-top: 50px;
 }
 
-
-.hero-heading{
-    font-family: 'CalSansSemiBold' ;
-    font-size: 70px;
-    line-height: 77px;
-    color: white;
+.hero-heading {
+  font-family: "CalSansSemiBold";
+  font-size: 70px;
+  line-height: 77px;
+  color: white;
 }
 
-.hero-para{
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    margin: 30px 0px;
-    font-size: 30px;
-    color: #B2B2B2;
+.hero-para {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin: 30px 0px;
+  font-size: 30px;
+  color: #b2b2b2;
 }
 
-.heading{
-  font-family: 'CalSansSemiBold' ;
+.heading {
+  font-family: "CalSansSemiBold";
   font-size: 57px;
-  line-height:60px;
+  line-height: 60px;
   color: white;
 }
 
@@ -75,14 +69,14 @@ body {
   box-sizing: border-box;
 }
 
-.sub-heading{
+.sub-heading {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 30px;
-  color: #B2B2B2;
+  color: #b2b2b2;
 }
 
-.about-para{
+.about-para {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   margin: 30px 0px;
@@ -90,32 +84,35 @@ body {
   color: white;
 }
 
-.our-project-heading{
-  font-family: 'CalSansSemiBold' ;
+.our-project-heading {
+  font-family: "CalSansSemiBold";
   font-size: 35px;
   line-height: 47px;
   color: white;
-
 }
 
-.our-project-para{
+.our-project-para {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   margin: 30px 0px;
   font-size: 16px;
   color: white;
-
 }
 
-.project-title{
-  font-family: 'CalSansSemiBold' ;
+.project-title {
+  font-family: "CalSansSemiBold";
   font-size: 30px;
   line-height: 35px;
   color: white;
 }
 
-.project-des{
+.footer-txt {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18rem;
+  color: #847d7d14;
+}
 
+.project-des {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   margin: 30px 0px;
@@ -124,168 +121,173 @@ body {
 }
 
 @font-face {
-    font-family: 'CalSansSemiBold' ;
-    src: url('./Font/Cal_Sans/CalSans-SemiBold.otf');
+  font-family: "CalSansSemiBold";
+  src: url("./Font/Cal_Sans/CalSans-SemiBold.otf");
 }
 
 .animated-btn-purple {
-    margin: 0.5em;
-    background: #302EBA;
-    color: white;
-    border: none;
-    border-radius: 32px;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: "Manrope", sans-serif;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-   }
-   
-   .animated-btn-purple:hover {
-    color: black;
-   }
-   
-   .animated-btn-purple:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-   }
-   
-   .animated-btn-purple:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-   }
+  margin: 0.5em;
+  background: #302eba;
+  color: white;
+  border: none;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
 
-   .animated-btn-white {
-    margin: 0.5em;
-    background: white;
-    color: black;
-    border: none;
-    border-radius: 32px;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: "Manrope", sans-serif;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-   }
-   
-   .animated-btn-white:hover {
-    color: white;
-   }
+.animated-btn-purple:hover {
+  color: black;
+}
 
-   .border-top-sec{
+.animated-btn-purple:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
 
-    border-top: 1px solid rgba(58, 58, 58, 0.43);
-  
+.animated-btn-purple:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.animated-btn-white {
+  margin: 0.5em;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.animated-btn-white:hover {
+  color: white;
+}
+
+.border-top-sec {
+  border-top: 1px solid rgba(58, 58, 58, 0.43);
+}
+
+header {
+  margin-bottom: -50px;
+}
+
+.animated-btn-white:after {
+  content: "";
+  background: #302eba;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+.about-us-img {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  padding-bottom: 60px;
+}
+
+.nav-bar {
+  background-color: #191919;
+  border-radius: 70px;
+}
+
+.animated-btn-white:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.animated-btn-border {
+  margin: 0.5em;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.animated-btn-border:hover {
+  color: black;
+}
+
+.animated-btn-border:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.animated-btn-border:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* marquee */
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-content img {
+  width: auto;
+  height: auto;
+  margin: 0 40px;
+  vertical-align: middle;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
   }
-  
-   header{
-    margin-bottom: -50px;
-   }
-   
-   .animated-btn-white:after {
-    content: "";
-    background: #302EBA;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-   }
-
-   .nav-bar{
-    background-color: #191919;
-    border-radius: 70px;
-   }
-   
-   .animated-btn-white:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-   }
-
-   .animated-btn-border {
-    margin: 0.5em;
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 32px;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: "Manrope", sans-serif;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-   }
-   
-   .animated-btn-border:hover {
-    color: black;
-   }
-   
-   .animated-btn-border:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-   }
-   
-   .animated-btn-border:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-   }
-  
-   /* marquee */
-
-  .marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    padding: 10px 0;
+  100% {
+    transform: translateX(-50%);
   }
-  
-  .marquee-content {
-    display: inline-block;
-    animation: scroll 20s linear infinite;
-  }
-  
-  .marquee-content img {
-    width: auto;
-    height: auto;
-    margin: 0 40px;
-    vertical-align: middle;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
+}
 
 /* progresbar */
 
@@ -312,7 +314,7 @@ body {
 .skills {
   height: 5px;
   width: 0px;
-  background-color: #302EBA;
+  background-color: #302eba;
 }
 
 /* swiper */
@@ -323,25 +325,25 @@ body {
   align-items: center;
 }
 
-
-.project-img{
-    display: block;
-    padding-bottom: 20px;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.project-img {
+  display: block;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-
-  .services-icon{
-    display: block;
-    padding-bottom: 20px;
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    
-  }
-
+.services-icon {
+  display: block;
+  padding-bottom: 10px;
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+.logo-nav {
+  background-color: #302eba;
+  border-radius: 100px;
+}
 
 /* form css */
 
@@ -356,83 +358,99 @@ body {
   width: 100%;
   border-radius: 25px;
   color: white;
-  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .dark-input::placeholder {
   color: #ccc;
 }
 
-.testimonials-card{
+.testimonials-card {
   border-radius: 25px;
   background: linear-gradient(to bottom, #111, #000);
-  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
   padding: 60px 40px;
 }
 
-.testimonials-card p{
+.testimonials-card p {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: white;
 }
 
-.testimonials-card h5{
+.project-img-scroll {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: transform 0.6s ease;
+}
+
+.project-img-scroll:hover {
+  transform: scale(1.03);
+}
+
+.project-div-height {
+  height: 650px;
+}
+.bg-gradient-purple {
+  background: linear-gradient(to bottom, #000000, #302eba62, #000000);
+}
+
+.slider-paddign-left-dekstop{
+  padding-left: 15%;
+}
+
+.testimonials-card h5 {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: white;
 }
 
-.testimonials-card h4{
-  font-family: 'CalSansSemiBold' ;
+.testimonials-card h4 {
+  font-family: "CalSansSemiBold";
   font-size: 16px;
   color: white;
-
 }
 
-.star{
-  color: #FFC800;
+.star {
+  color: #ffc800;
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
 
-.cta-heading{
-  font-family: 'CalSansSemiBold' ;
-  font-size: 55px;
-  line-height: 60px;
+.cta-heading {
+  font-family: "CalSansSemiBold";
+  font-size: 140px;
   color: white;
-
+  text-transform: uppercase;
 }
 
-.cta-para{
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  color: white;
+.bg-purple {
+  background-color: #302eba;
+  border-radius: 50px;
 }
 
-.bg-gradient-purple{
-  background: linear-gradient(to left, #000000, #302EBA);
-}
-
-.work-p-card{
+.work-p-card {
   border-radius: 25px;
   background: linear-gradient(to bottom, #111, #000);
-  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
   padding: 60px 40px;
 }
 
-.work-p-card h1{
+.work-p-card h1 {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: white;
 }
 
-.work-p-card p{
+.work-p-card p {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -449,12 +467,12 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background: #302EBA !important;
+  background: #302eba !important;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fff !important; /* you had #ffff, should be #fff */
+  color: #fff !important;
 }
 
 .swiper {
@@ -462,6 +480,191 @@ body {
   justify-content: center;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .swiper-slide {
-  width: auto; 
+  width: auto;
+}
+
+.footer-txt-btm {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  color: #302eba;
+  text-transform: uppercase;
+}
+
+.social-icons-heading {
+  margin-bottom: 50px;
+  font-family: "CalSansSemiBold";
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+}
+
+.social-icon {
+  background-color: #1e1e1e;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 55px;
+  height: 55px;
+  margin: 0 8px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  color: #302eba;
+}
+
+.animated-section {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  will-change: transform;
+  transition: transform 2.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* slower and smooth */
+}
+
+
+/* ===================
+   Responsive CSS
+   =================== */
+
+/* Tablet Devices (768px and below) */
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .hero-para,
+  .sub-heading,
+  .about-para,
+  .our-project-para,
+  .project-des {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 10px;
+  }
+
+  .heading,
+  .our-project-heading,
+  .project-title {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .cta-heading {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .stack-logo {
+    flex: 0 1 calc(25% - 20px);
+    max-width: 80px;
+    height: 80px;
+  }
+
+  .testimonials-card,
+  .work-p-card {
+    padding: 30px 20px;
+  }
+
+  .animated-btn-purple,
+  .animated-btn-white,
+  .animated-btn-border {
+    font-size: 14px;
+  }
+
+  .skill-item {
+    flex: 0 1 100%;
+  }
+
+  .social-icons-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer-txt {
+    font-size: 8rem;
+    text-align: center;
+  }
+
+  .slider-paddign-left-dekstop {
+    padding-left: 0;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+  .hero-heading {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .hero-para,
+  .sub-heading,
+  .about-para,
+  .our-project-para,
+  .project-des {
+    font-size: 14px;
+  }
+
+  .heading,
+  .our-project-heading,
+  .project-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .cta-heading {
+    font-size: 40px;
+  }
+
+  .stack-logo {
+    flex: 0 1 calc(40% - 20px);
+    max-width: 100%;
+    height: 70px;
+  }
+
+  .testimonials-card,
+  .work-p-card {
+    padding: 20px 15px;
+  }
+
+  .animated-btn-purple,
+  .animated-btn-white,
+  .animated-btn-border {
+    font-size: 12px;
+  }
+
+  .footer-txt {
+    font-size: 6rem;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    margin: 0 4px;
+  }
+  .nav-bar {
+  background-color: #191919;
+  border-radius: 30px;
+  margin-inline: 10px;
+  padding: 1px;
+}
 }
