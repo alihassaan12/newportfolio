@@ -336,8 +336,8 @@ header {
 .services-icon {
   display: block;
   padding-bottom: 10px;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 .logo-nav {
