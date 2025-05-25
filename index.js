@@ -4,8 +4,12 @@ var swiper = new Swiper(".projectSlider", {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
@@ -13,20 +17,20 @@ var swiper = new Swiper(".projectSlider", {
   },
   breakpoints: {
     576: {
-      slidesPerView: 2.4,
+      slidesPerView: 2.2,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 2.4,
+      slidesPerView: 2.3,
       spaceBetween: 30,
     },
     992: {
       slidesPerView: 2.4,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     1200: {
-      slidesPerView: 2.4,
-      spaceBetween: 50,
+      slidesPerView: 2.7,
+      spaceBetween: 30,
     },
   },
 });
