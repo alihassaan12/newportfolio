@@ -400,10 +400,6 @@ header {
   background: linear-gradient(to bottom, #000000, #302eba62, #000000);
 }
 
-.slider-paddign-left-dekstop{
-  padding-left: 15%;
-}
-
 .testimonials-card h5 {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
@@ -536,7 +532,6 @@ a {
   transition: transform 2.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* slower and smooth */
 }
 
-
 /* ===================
    Responsive CSS
    =================== */
@@ -602,10 +597,6 @@ a {
     font-size: 8rem;
     text-align: center;
   }
-
-  .slider-paddign-left-dekstop {
-    padding-left: 0;
-  }
 }
 
 /* Mobile Devices (480px and below) */
@@ -662,9 +653,9 @@ a {
     margin: 0 4px;
   }
   .nav-bar {
-  background-color: #191919;
-  border-radius: 30px;
-  margin-inline: 10px;
-  padding: 1px;
-}
+    background-color: #191919;
+    border-radius: 30px;
+    margin-inline: 10px;
+    padding: 1px;
+  }
 }

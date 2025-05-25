@@ -1,25 +1,31 @@
 var swiper = new Swiper(".projectSlider", {
   slidesPerView: 1,
   spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
     576: {
-      slidesPerView: 1.2,
+      slidesPerView: 2.4,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 2.4,
       spaceBetween: 30,
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 2.4,
       spaceBetween: 40,
     },
     1200: {
-      slidesPerView: 3.2,
+      slidesPerView: 2.4,
       spaceBetween: 50,
     },
   },
@@ -30,6 +36,7 @@ var swiper = new Swiper(".projectSlider", {
 var swiper = new Swiper(".testimonialsSlider", {
   slidesPerView: 1,
   spaceBetween: 20,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -134,4 +141,29 @@ window.addEventListener("scroll", () => {
   });
 
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+//////////////
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // prevent page reload
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch("https://formsubmit.co/alihassaanamjad@gmail.com", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        form.reset(); // clear the form
+        document.getElementById("formMessage").style.display = "block"; // show success message
+      } else {
+        alert("❌ There was an error submitting the form. Please try again.");
+      }
+    })
+    .catch((error) => {
+      alert("❌ Error: " + error.message);
+    });
 });
