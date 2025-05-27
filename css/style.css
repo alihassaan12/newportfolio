@@ -274,9 +274,9 @@ header {
 }
 
 .marquee-content img {
-  width: auto;
-  height: auto;
-  margin: 0 40px;
+  width: 170px;
+  height: 50px;
+  margin: 0  10px;
   vertical-align: middle;
 }
 
