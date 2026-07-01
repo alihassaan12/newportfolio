@@ -44,7 +44,9 @@ export function Testimonials() {
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-ember">04 — Testimonials</p>
+            <p className="font-mono text-xs uppercase tracking-widest text-ember">
+              04 — Testimonials
+            </p>
             <h2 className="mt-4 font-display text-5xl leading-tight text-balance">
               What clients say.
             </h2>

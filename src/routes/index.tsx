@@ -5,16 +5,34 @@ import { featured, projects } from "@/lib/projects";
 import { QuickInquiry } from "@/components/site/QuickInquiry";
 import { Testimonials } from "@/components/site/Testimonials";
 import { CALENDLY_URL, CV_URL } from "@/lib/site";
-import { ArrowRight, CalendarClock, Download, Github, Linkedin, Mail, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  CalendarClock,
+  Download,
+  Github,
+  Linkedin,
+  Mail,
+  Sparkles,
+} from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Home,
 });
 
 const stack = [
-  "WordPress", "Shopify", "Webflow", "Wix", "WooCommerce",
-  "Elementor", "HTML5", "CSS / Tailwind", "JavaScript", "jQuery",
-  "React", "PHP", "Git",
+  "WordPress",
+  "Shopify",
+  "Webflow",
+  "Wix",
+  "WooCommerce",
+  "Elementor",
+  "HTML5",
+  "CSS / Tailwind",
+  "JavaScript",
+  "jQuery",
+  "React",
+  "PHP",
+  "Git",
 ];
 
 const stats = [
@@ -47,13 +65,12 @@ function Home() {
             <span className="italic text-ember">done right.</span>
           </h1>
 
-
           <div className="mt-10 grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-end">
             <p className="max-w-xl text-lg text-muted-foreground text-balance">
               I'm <span className="text-foreground">Ali Hassaan</span> — a full-stack web developer
               based in Lahore. I design and build fast, responsive websites and eCommerce stores on
-              WordPress, Shopify, Webflow and Wix. No fluff, no template soup — just clean work
-              that ships.
+              WordPress, Shopify, Webflow and Wix. No fluff, no template soup — just clean work that
+              ships.
             </p>
 
             <div className="flex flex-wrap gap-3 md:justify-end">
@@ -135,7 +152,8 @@ function Home() {
               </Link>
               <a
                 href={CV_URL}
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-surface transition"
               >
                 <Download size={14} /> Download CV
@@ -160,7 +178,9 @@ function Home() {
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-ember">02 — Selected work</p>
+              <p className="font-mono text-xs uppercase tracking-widest text-ember">
+                02 — Selected work
+              </p>
               <h2 className="mt-4 font-display text-5xl leading-tight text-balance">
                 Recent builds.
               </h2>
@@ -191,15 +211,18 @@ function Home() {
         <div className="mt-16 grid gap-px border border-border bg-border md:grid-cols-3">
           {[
             {
-              n: "01", t: "Discover",
+              n: "01",
+              t: "Discover",
               d: "We talk. I learn about your business, users, and where the current site is holding you back.",
             },
             {
-              n: "02", t: "Design & build",
+              n: "02",
+              t: "Design & build",
               d: "I choose the right platform, ship in tight iterations, and share progress in a live staging environment.",
             },
             {
-              n: "03", t: "Launch & support",
+              n: "03",
+              t: "Launch & support",
               d: "Careful QA, a clean launch, and a written handover so you can actually run the site yourself.",
             },
           ].map((s) => (
@@ -234,7 +257,8 @@ function Home() {
               <div className="flex flex-wrap gap-3">
                 <a
                   href={CALENDLY_URL}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
                 >
                   <CalendarClock size={16} /> Schedule a meeting
@@ -257,14 +281,16 @@ function Home() {
                 </a>
                 <a
                   href="https://www.linkedin.com/in/ali-hassaan-full-stack-developer-/"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm text-foreground hover:bg-surface"
                 >
                   <Linkedin size={16} /> LinkedIn
                 </a>
                 <a
                   href="https://github.com/alihassaan12"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm text-foreground hover:bg-surface"
                 >
                   <Github size={16} /> GitHub

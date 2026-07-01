@@ -59,7 +59,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Fashion & Apparel",
     url: "https://thehonestcrown.com/",
-    description: "Modern apparel brand storefront with a bold identity and editorial product storytelling.",
+    description:
+      "Modern apparel brand storefront with a bold identity and editorial product storytelling.",
     year: "2025",
     tags: ["eCommerce", "Apparel"],
   },
@@ -69,7 +70,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Fashion & Apparel",
     url: "https://www.verbero.com/",
-    description: "Sports apparel & equipment eCommerce — configurable products, deep filtering and global shipping.",
+    description:
+      "Sports apparel & equipment eCommerce — configurable products, deep filtering and global shipping.",
     year: "2024",
     tags: ["eCommerce", "Sports"],
   },
@@ -91,7 +93,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Beauty & Cosmetics",
     url: "https://adorablecosmeticspk.com/",
-    description: "Cosmetics Shopify storefront with vibrant product pages, bundles and a conversion-focused PDP.",
+    description:
+      "Cosmetics Shopify storefront with vibrant product pages, bundles and a conversion-focused PDP.",
     year: "2025",
     tags: ["eCommerce", "Beauty"],
   },
@@ -101,7 +104,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Beauty & Cosmetics",
     url: "https://irisspremium.com/",
-    description: "Premium lifestyle & beauty brand — polished Shopify build with rich collection pages.",
+    description:
+      "Premium lifestyle & beauty brand — polished Shopify build with rich collection pages.",
     year: "2025",
     tags: ["eCommerce", "Premium"],
   },
@@ -111,7 +115,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Beauty & Cosmetics",
     url: "https://www.londontownusa.com/",
-    description: "Beauty & nail lacquer eCommerce — custom theme, subscription flow and CRO-focused PDP.",
+    description:
+      "Beauty & nail lacquer eCommerce — custom theme, subscription flow and CRO-focused PDP.",
     year: "2024",
     tags: ["eCommerce", "Beauty"],
   },
@@ -133,7 +138,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Mobile & Electronics",
     url: "https://phonebuyer.ae/",
-    description: "Device trade-in & resale platform — instant-quote flow and a clean UAE-focused storefront.",
+    description:
+      "Device trade-in & resale platform — instant-quote flow and a clean UAE-focused storefront.",
     year: "2025",
     tags: ["Mobile", "Trade-in"],
   },
@@ -143,7 +149,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Mobile & Electronics",
     url: "https://phoneexits.com/",
-    description: "Buy & sell mobile marketplace — device catalog, valuation forms and lead capture.",
+    description:
+      "Buy & sell mobile marketplace — device catalog, valuation forms and lead capture.",
     year: "2025",
     tags: ["Mobile", "Marketplace"],
   },
@@ -173,7 +180,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Lighting & Interiors",
     url: "https://www.seuslighting.com/",
-    description: "Lighting eCommerce store — large catalog, faceted filtering and a premium PDP experience.",
+    description:
+      "Lighting eCommerce store — large catalog, faceted filtering and a premium PDP experience.",
     year: "2025",
     tags: ["eCommerce", "Lighting"],
   },
@@ -193,7 +201,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Lighting & Interiors",
     url: "https://vitkonwood.de/",
-    description: "European furniture Shopify store with localized checkout and configurable products.",
+    description:
+      "European furniture Shopify store with localized checkout and configurable products.",
     year: "2024",
     tags: ["eCommerce", "Furniture"],
   },
@@ -203,7 +212,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Lighting & Interiors",
     url: "https://propertyspa.com/",
-    description: "Home & property services brand — clean WordPress build with service pages and inquiry flow.",
+    description:
+      "Home & property services brand — clean WordPress build with service pages and inquiry flow.",
     year: "2024",
     tags: ["Home", "Services"],
   },
@@ -215,7 +225,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Automotive",
     url: "https://originalemevparts.com/",
-    description: "EV parts eCommerce — structured catalog, fitment info and a streamlined Shopify checkout.",
+    description:
+      "EV parts eCommerce — structured catalog, fitment info and a streamlined Shopify checkout.",
     year: "2025",
     tags: ["eCommerce", "EV Parts"],
   },
@@ -225,7 +236,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Automotive",
     url: "https://grandcitygarage.com/",
-    description: "Auto repair & service center — WordPress site with booking, services and location SEO.",
+    description:
+      "Auto repair & service center — WordPress site with booking, services and location SEO.",
     year: "2025",
     tags: ["Automotive", "Booking"],
   },
@@ -245,7 +257,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Automotive",
     url: "https://flyridefrankfurt.de/",
-    description: "Mobility & ride service in Frankfurt — localized WordPress build with booking flow.",
+    description:
+      "Mobility & ride service in Frankfurt — localized WordPress build with booking flow.",
     year: "2025",
     tags: ["Mobility", "Booking"],
   },
@@ -255,7 +268,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Automotive",
     url: "https://www.haulingops.com/",
-    description: "Hauling & logistics company site with service-area pages and a clear quote funnel.",
+    description:
+      "Hauling & logistics company site with service-area pages and a clear quote funnel.",
     year: "2024",
     tags: ["Logistics", "Lead-gen"],
   },
@@ -265,7 +279,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Automotive",
     url: "https://octacargo.ca/",
-    description: "Freight & cargo services site — WordPress build with tracking and inquiry sections.",
+    description:
+      "Freight & cargo services site — WordPress build with tracking and inquiry sections.",
     year: "2024",
     tags: ["Logistics", "Services"],
   },
@@ -287,7 +302,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Dental & Healthcare",
     url: "https://simplysmilesarrowhead.com/",
-    description: "Dental practice site — appointment booking, service pages and local-SEO structure.",
+    description:
+      "Dental practice site — appointment booking, service pages and local-SEO structure.",
     year: "2025",
     tags: ["Dental", "Booking"],
   },
@@ -307,7 +323,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Dental & Healthcare",
     url: "https://clarksvillesmilestn.com/",
-    description: "Local dental brand — WordPress site with treatment pages and a strong local presence.",
+    description:
+      "Local dental brand — WordPress site with treatment pages and a strong local presence.",
     year: "2025",
     tags: ["Dental", "Local SEO"],
   },
@@ -327,7 +344,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Dental & Healthcare",
     url: "https://careforyoudental.com/",
-    description: "Patient-first dental practice WordPress site with clear services and contact flow.",
+    description:
+      "Patient-first dental practice WordPress site with clear services and contact flow.",
     year: "2024",
     tags: ["Dental", "Services"],
   },
@@ -337,7 +355,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Dental & Healthcare",
     url: "https://www.pearldentalgroup.com/",
-    description: "Multi-provider dental group site with team pages, services and appointment booking.",
+    description:
+      "Multi-provider dental group site with team pages, services and appointment booking.",
     year: "2024",
     tags: ["Dental", "Group"],
   },
@@ -347,7 +366,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Dental & Healthcare",
     url: "https://dentalimplantstucsoncenter.com/",
-    description: "Implant-focused dental landing site with procedure pages and consultation funnels.",
+    description:
+      "Implant-focused dental landing site with procedure pages and consultation funnels.",
     year: "2024",
     tags: ["Dental", "Lead-gen"],
   },
@@ -357,7 +377,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Dental & Healthcare",
     url: "https://dentalseoservicescompany.com/",
-    description: "Marketing agency for dental practices — WordPress site with case studies and SEO content.",
+    description:
+      "Marketing agency for dental practices — WordPress site with case studies and SEO content.",
     year: "2024",
     tags: ["Marketing", "SEO"],
   },
@@ -387,7 +408,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Dental & Healthcare",
     url: "https://positivepathwaysaba.com/",
-    description: "ABA therapy provider site — approachable design, service pages and family resources.",
+    description:
+      "ABA therapy provider site — approachable design, service pages and family resources.",
     year: "2025",
     tags: ["Therapy", "Care"],
   },
@@ -419,7 +441,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://porterfieldstumpandtree.com/",
-    description: "Tree & stump removal service — WordPress site with gallery, service-area pages and quotes.",
+    description:
+      "Tree & stump removal service — WordPress site with gallery, service-area pages and quotes.",
     year: "2025",
     tags: ["Tree Care", "Lead-gen"],
   },
@@ -429,7 +452,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://bgtreecare.com/",
-    description: "Tree-care specialists — WordPress build with service pages and a clear estimate flow.",
+    description:
+      "Tree-care specialists — WordPress build with service pages and a clear estimate flow.",
     year: "2025",
     tags: ["Tree Care", "Local"],
   },
@@ -449,7 +473,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://arbormaxpa.com/",
-    description: "Arborist & tree service in Pennsylvania — WordPress site with local-SEO structure.",
+    description:
+      "Arborist & tree service in Pennsylvania — WordPress site with local-SEO structure.",
     year: "2025",
     tags: ["Tree Care", "Local SEO"],
   },
@@ -479,7 +504,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://coastalsoftwashsolutions.com/",
-    description: "Exterior cleaning & softwash company — WordPress site with before/after gallery and quotes.",
+    description:
+      "Exterior cleaning & softwash company — WordPress site with before/after gallery and quotes.",
     year: "2024",
     tags: ["Cleaning", "Gallery"],
   },
@@ -489,7 +515,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://cleaningnownc.com/",
-    description: "Residential & commercial cleaning brand with clear service pages and inquiry flow.",
+    description:
+      "Residential & commercial cleaning brand with clear service pages and inquiry flow.",
     year: "2024",
     tags: ["Cleaning", "Lead-gen"],
   },
@@ -499,7 +526,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://aryafireprotection.com/",
-    description: "Fire-protection services site — compliance-focused content and service catalogue.",
+    description:
+      "Fire-protection services site — compliance-focused content and service catalogue.",
     year: "2024",
     tags: ["Safety", "Services"],
   },
@@ -509,7 +537,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://www.rocket-locksmith.com/",
-    description: "24/7 locksmith service — WordPress site with emergency CTAs and service-area SEO.",
+    description:
+      "24/7 locksmith service — WordPress site with emergency CTAs and service-area SEO.",
     year: "2024",
     tags: ["Local Services", "SEO"],
   },
@@ -519,7 +548,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://jarzysappliances.co.uk/",
-    description: "Appliance repair service — WordPress build with quote form and service-area pages.",
+    description:
+      "Appliance repair service — WordPress build with quote form and service-area pages.",
     year: "2025",
     tags: ["Repair", "Lead-gen"],
   },
@@ -549,7 +579,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://clenova.co.uk/",
-    description: "Cleaning-services brand — modern WordPress build with service pages and quote form.",
+    description:
+      "Cleaning-services brand — modern WordPress build with service pages and quote form.",
     year: "2025",
     tags: ["Cleaning", "Lead-gen"],
   },
@@ -569,7 +600,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://www.fisherscaffolding.co.uk/",
-    description: "Scaffolding contractor — WordPress marketing site with project gallery and quote flow.",
+    description:
+      "Scaffolding contractor — WordPress marketing site with project gallery and quote flow.",
     year: "2025",
     tags: ["Construction", "Lead-gen"],
   },
@@ -579,7 +611,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://pestcontrolbromley.co.uk/",
-    description: "Local pest-control company — WordPress site with pest-specific service pages and SEO.",
+    description:
+      "Local pest-control company — WordPress site with pest-specific service pages and SEO.",
     year: "2025",
     tags: ["Pest Control", "SEO"],
   },
@@ -589,7 +622,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://windowrepairslichfield.co.uk/",
-    description: "Local window-repair specialist — WordPress build with clear service tree and CTAs.",
+    description:
+      "Local window-repair specialist — WordPress build with clear service tree and CTAs.",
     year: "2025",
     tags: ["Repair", "Lead-gen"],
   },
@@ -599,7 +633,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://pestcontrolandproofing.co.uk/",
-    description: "Pest-control and proofing services — WordPress site with treatment-specific pages.",
+    description:
+      "Pest-control and proofing services — WordPress site with treatment-specific pages.",
     year: "2025",
     tags: ["Pest Control", "SEO"],
   },
@@ -619,7 +654,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://ashmoreplastering.com/",
-    description: "Plastering contractor — WordPress marketing site with project gallery and lead form.",
+    description:
+      "Plastering contractor — WordPress marketing site with project gallery and lead form.",
     year: "2025",
     tags: ["Construction", "Gallery"],
   },
@@ -639,7 +675,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://0121repairs.co.uk/",
-    description: "Birmingham appliance-repair brand — WordPress build with service-area SEO structure.",
+    description:
+      "Birmingham appliance-repair brand — WordPress build with service-area SEO structure.",
     year: "2025",
     tags: ["Repair", "SEO"],
   },
@@ -649,7 +686,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://www.stjosephboatrentals.com/",
-    description: "Boat rental business — WordPress site with fleet showcase and online booking inquiry.",
+    description:
+      "Boat rental business — WordPress site with fleet showcase and online booking inquiry.",
     year: "2025",
     tags: ["Rentals", "Booking"],
   },
@@ -659,7 +697,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Home & Trade Services",
     url: "https://minitravelexecutive.co.uk/",
-    description: "Executive travel service — WordPress site with fleet showcase and booking inquiry.",
+    description:
+      "Executive travel service — WordPress site with fleet showcase and booking inquiry.",
     year: "2025",
     tags: ["Travel", "Booking"],
   },
@@ -671,7 +710,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Corporate & Consulting",
     url: "https://www.codeviumdigital.com/",
-    description: "Digital agency brand site — modern layout, service pages and case-study sections.",
+    description:
+      "Digital agency brand site — modern layout, service pages and case-study sections.",
     year: "2024",
     tags: ["Agency", "Brand"],
   },
@@ -681,7 +721,8 @@ export const projects: Project[] = [
     platform: "Shopify",
     category: "Corporate & Consulting",
     url: "https://abs-developers.com/",
-    description: "Real-estate & development brand storefront with project listings and inquiry flow.",
+    description:
+      "Real-estate & development brand storefront with project listings and inquiry flow.",
     year: "2025",
     tags: ["Real Estate", "Brand"],
   },
@@ -691,7 +732,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Corporate & Consulting",
     url: "https://americanfirstaccounting.com/",
-    description: "Accounting firm site — trust-first design, service pages and consultation booking.",
+    description:
+      "Accounting firm site — trust-first design, service pages and consultation booking.",
     year: "2024",
     tags: ["Accounting", "Services"],
   },
@@ -711,7 +753,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Corporate & Consulting",
     url: "https://fortisamlconsulting.com/",
-    description: "Compliance & AML consultancy — clean corporate WordPress build with service pages.",
+    description:
+      "Compliance & AML consultancy — clean corporate WordPress build with service pages.",
     year: "2024",
     tags: ["Consulting", "Compliance"],
   },
@@ -731,7 +774,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Corporate & Consulting",
     url: "https://residencybyinvestmentinmalta.com/",
-    description: "Immigration & residency advisory site — informational content and consultation funnels.",
+    description:
+      "Immigration & residency advisory site — informational content and consultation funnels.",
     year: "2024",
     tags: ["Advisory", "Lead-gen"],
   },
@@ -741,7 +785,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Corporate & Consulting",
     url: "http://productcatalogmanagementsoftware.com/",
-    description: "SaaS marketing site for a catalog-management product with feature and pricing sections.",
+    description:
+      "SaaS marketing site for a catalog-management product with feature and pricing sections.",
     year: "2024",
     tags: ["SaaS", "Marketing"],
   },
@@ -751,7 +796,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Corporate & Consulting",
     url: "https://techsmartfs.co.uk/",
-    description: "Facilities-services company — WordPress build with service catalogue and inquiry flow.",
+    description:
+      "Facilities-services company — WordPress build with service catalogue and inquiry flow.",
     year: "2025",
     tags: ["B2B", "Facilities"],
   },
@@ -761,7 +807,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Corporate & Consulting",
     url: "https://michaelcoleman.com/",
-    description: "Personal brand & consulting site with structured content, blog and booking integration.",
+    description:
+      "Personal brand & consulting site with structured content, blog and booking integration.",
     year: "2024",
     tags: ["Personal Brand", "Blog"],
   },
@@ -781,7 +828,8 @@ export const projects: Project[] = [
     platform: "Wix",
     category: "Corporate & Consulting",
     url: "https://www.angelsamongusfoundation.org/",
-    description: "Non-profit foundation site — Wix build with donations, programs and story-led content.",
+    description:
+      "Non-profit foundation site — Wix build with donations, programs and story-led content.",
     year: "2025",
     tags: ["Non-profit", "Donations"],
   },
@@ -791,7 +839,8 @@ export const projects: Project[] = [
     platform: "Wix",
     category: "Corporate & Consulting",
     url: "https://www.gmccx.com/",
-    description: "Corporate services brand — Wix site with structured service pages and contact flow.",
+    description:
+      "Corporate services brand — Wix site with structured service pages and contact flow.",
     year: "2025",
     tags: ["Corporate", "Services"],
   },
@@ -801,7 +850,8 @@ export const projects: Project[] = [
     platform: "WordPress",
     category: "Corporate & Consulting",
     url: "https://thompsonjiujitsu.com/",
-    description: "Martial-arts academy site — class schedules, membership info and trial-signup CTAs.",
+    description:
+      "Martial-arts academy site — class schedules, membership info and trial-signup CTAs.",
     year: "2025",
     tags: ["Fitness", "Booking"],
   },
@@ -824,7 +874,8 @@ export const projects: Project[] = [
     platform: "Webflow",
     category: "Marketing & Brand",
     url: "https://www.synrg.ai/",
-    description: "AI product marketing site — motion-heavy hero, dark-mode aesthetic and CMS-driven docs.",
+    description:
+      "AI product marketing site — motion-heavy hero, dark-mode aesthetic and CMS-driven docs.",
     year: "2024",
     tags: ["AI", "Product"],
   },
@@ -874,7 +925,8 @@ export const projects: Project[] = [
     platform: "Webflow",
     category: "Marketing & Brand",
     url: "https://www.chicdnr.com/",
-    description: "Interior design studio portfolio — big imagery, quiet type, generous white space.",
+    description:
+      "Interior design studio portfolio — big imagery, quiet type, generous white space.",
     year: "2023",
     tags: ["Portfolio", "Design"],
   },

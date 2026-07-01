@@ -126,11 +126,7 @@
 }
 
 @utility ember-glow {
-  background: radial-gradient(
-    600px circle at 50% 0%,
-    oklch(0.68 0.19 45 / 0.18),
-    transparent 60%
-  );
+  background: radial-gradient(600px circle at 50% 0%, oklch(0.68 0.19 45 / 0.18), transparent 60%);
 }
 
 @utility hairline {
@@ -142,19 +138,34 @@
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* ── Light reveal / float animations ─────────────────────────── */
 @keyframes reveal-up {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes float-soft {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 @utility reveal {

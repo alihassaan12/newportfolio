@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Check, Send, Zap } from "lucide-react";
 import { z } from "zod";
 
@@ -9,18 +16,15 @@ const schema = z.object({
   need: z.string().trim().min(3, "Tell me what you need").max(400),
 });
 
-export function QuickInquiry({
-  trigger,
-}: {
-  trigger?: React.ReactNode;
-}) {
+export function QuickInquiry({ trigger }: { trigger?: React.ReactNode }) {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [f, setF] = useState({ name: "", contact: "", need: "" });
 
-  const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-    setF((v) => ({ ...v, [k]: e.target.value }));
+  const set =
+    (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+      setF((v) => ({ ...v, [k]: e.target.value }));
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,7 +36,7 @@ export function QuickInquiry({
     setErr(null);
     const subject = encodeURIComponent(`Quick brief — ${r.data.name}`);
     const body = encodeURIComponent(
-      `Name: ${r.data.name}\nBest contact: ${r.data.contact}\n\nWhat they need:\n${r.data.need}`
+      `Name: ${r.data.name}\nBest contact: ${r.data.contact}\n\nWhat they need:\n${r.data.need}`,
     );
     window.location.href = `mailto:alihassaanamjad@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
