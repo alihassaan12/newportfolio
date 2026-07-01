@@ -65,9 +65,9 @@ function Projects() {
         <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
           <p className="reveal font-mono text-xs uppercase tracking-widest text-ember">Selected work</p>
           <h1 className="reveal mt-4 font-display text-6xl leading-[0.95] text-balance md:text-8xl">
-            {projects.length} builds,
+            Turning Ideas
             <br />
-            <span className="italic text-muted-foreground">one developer.</span>
+            into Reality
           </h1>
           <p className="reveal mt-8 max-w-2xl text-lg text-muted-foreground">
             A cross-section of recent client work — organised by industry so you can jump straight to

@@ -56,7 +56,7 @@ export const projects: Project[] = [
   {
     slug: "the-honest-crown",
     name: "The Honest Crown",
-    platform: "Shopify",
+    platform: "WordPress",
     category: "Fashion & Apparel",
     url: "https://thehonestcrown.com/",
     description: "Modern apparel brand storefront with a bold identity and editorial product storytelling.",
@@ -115,16 +115,6 @@ export const projects: Project[] = [
     year: "2024",
     tags: ["eCommerce", "Beauty"],
   },
-  {
-    slug: "kamana",
-    name: "Kamana",
-    platform: "Shopify",
-    category: "Beauty & Cosmetics",
-    url: "https://kamana.co/",
-    description: "Modern lifestyle Shopify build with editorial product storytelling.",
-    year: "2024",
-    tags: ["eCommerce", "Lifestyle"],
-  },
 
   // ── Mobile & Electronics ──────────────────────────────────────────
   {
@@ -136,16 +126,6 @@ export const projects: Project[] = [
     description: "Device trade-in & resale platform — instant-quote flow and a clean UAE-focused storefront.",
     year: "2025",
     tags: ["Mobile", "Trade-in"],
-  },
-  {
-    slug: "phoneexits",
-    name: "Phone Exits",
-    platform: "WordPress",
-    category: "Mobile & Electronics",
-    url: "https://phoneexits.com/",
-    description: "Buy & sell mobile marketplace — device catalog, valuation forms and lead capture.",
-    year: "2025",
-    tags: ["Mobile", "Marketplace"],
   },
   {
     slug: "quickcellphone",
@@ -209,16 +189,6 @@ export const projects: Project[] = [
   },
 
   // ── Automotive ────────────────────────────────────────────────────
-  {
-    slug: "original-emev-parts",
-    name: "Original EMEV Parts",
-    platform: "Shopify",
-    category: "Automotive",
-    url: "https://originalemevparts.com/",
-    description: "EV parts eCommerce — structured catalog, fitment info and a streamlined Shopify checkout.",
-    year: "2025",
-    tags: ["eCommerce", "EV Parts"],
-  },
   {
     slug: "grand-city-garage",
     name: "Grand City Garage",
@@ -484,16 +454,6 @@ export const projects: Project[] = [
     tags: ["Cleaning", "Gallery"],
   },
   {
-    slug: "cleaning-now-nc",
-    name: "Cleaning Now NC",
-    platform: "WordPress",
-    category: "Home & Trade Services",
-    url: "https://cleaningnownc.com/",
-    description: "Residential & commercial cleaning brand with clear service pages and inquiry flow.",
-    year: "2024",
-    tags: ["Cleaning", "Lead-gen"],
-  },
-  {
     slug: "arya-fire-protection",
     name: "Arya Fire Protection",
     platform: "WordPress",
@@ -592,16 +552,6 @@ export const projects: Project[] = [
     description: "Local window-repair specialist — WordPress build with clear service tree and CTAs.",
     year: "2025",
     tags: ["Repair", "Lead-gen"],
-  },
-  {
-    slug: "pest-control-proofing",
-    name: "Pest Control & Proofing",
-    platform: "WordPress",
-    category: "Home & Trade Services",
-    url: "https://pestcontrolandproofing.co.uk/",
-    description: "Pest-control and proofing services — WordPress site with treatment-specific pages.",
-    year: "2025",
-    tags: ["Pest Control", "SEO"],
   },
   {
     slug: "essex-window-care",
@@ -902,7 +852,7 @@ export const featured = [
   projects.find((p) => p.slug === "house-of-faraz")!,
   projects.find((p) => p.slug === "swankey")!,
   projects.find((p) => p.slug === "seus-lighting")!,
-  projects.find((p) => p.slug === "original-emev-parts")!,
+  projects.find((p) => p.slug === "the-honest-crown")!,
   projects.find((p) => p.slug === "synrg")!,
   projects.find((p) => p.slug === "adorable-cosmetics")!,
 ].filter(Boolean);

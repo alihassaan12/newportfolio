@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import { Check, Send, Zap } from "lucide-react";
 import { z } from "zod";
+import { sendFormToEmail } from "@/lib/send-form";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Name is required").max(80),
@@ -16,13 +17,14 @@ export function QuickInquiry({
 }) {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
+  const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [f, setF] = useState({ name: "", contact: "", need: "" });
 
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setF((v) => ({ ...v, [k]: e.target.value }));
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const r = schema.safeParse(f);
     if (!r.success) {
@@ -30,17 +32,23 @@ export function QuickInquiry({
       return;
     }
     setErr(null);
-    const subject = encodeURIComponent(`Quick brief — ${r.data.name}`);
-    const body = encodeURIComponent(
-      `Name: ${r.data.name}\nBest contact: ${r.data.contact}\n\nWhat they need:\n${r.data.need}`
-    );
-    window.location.href = `mailto:alihassaanamjad@gmail.com?subject=${subject}&body=${body}`;
+    setBusy(true);
+    const res = await sendFormToEmail(`Quick brief — ${r.data.name}`, {
+      Name: r.data.name,
+      "Best contact": r.data.contact,
+      "What they need": r.data.need,
+    });
+    setBusy(false);
+    if (!res.ok) {
+      setErr(res.error ?? "Could not send. Please try again.");
+      return;
+    }
     setSent(true);
     setTimeout(() => {
       setOpen(false);
       setSent(false);
       setF({ name: "", contact: "", need: "" });
-    }, 1400);
+    }, 1500);
   };
 
   const input =
@@ -94,12 +102,15 @@ export function QuickInquiry({
           {err && <p className="text-xs text-destructive">{err}</p>}
           <button
             type="submit"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-ember px-5 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
+            disabled={busy}
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-ember px-5 py-3 text-sm font-medium text-primary-foreground hover:opacity-90 disabled:opacity-70"
           >
             {sent ? (
               <>
-                <Check size={16} /> Email opened
+                <Check size={16} /> Sent — talk soon
               </>
+            ) : busy ? (
+              "Sending…"
             ) : (
               <>
                 <Send size={16} /> Send brief
@@ -107,7 +118,7 @@ export function QuickInquiry({
             )}
           </button>
           <p className="text-[11px] text-muted-foreground text-center">
-            Opens your email client with the message pre-filled — nothing is stored on this site.
+            Your brief is emailed directly to alihassaanamjad@gmail.com.
           </p>
         </form>
       </DialogContent>

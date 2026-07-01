@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import { QuickInquiry } from "@/components/site/QuickInquiry";
-import { CALENDLY_URL, CV_URL } from "@/lib/site";
+import { ScheduleMeeting } from "@/components/site/ScheduleMeeting";
+import { CV_URL } from "@/lib/site";
 import { CalendarClock, Download, MapPin, Briefcase } from "lucide-react";
 import aliPortrait from "@/assets/ali-portrait.png.asset.json";
 
@@ -101,7 +102,7 @@ function About() {
               </p>
               <p>
                 I studied Computer Science at Virtual University of Pakistan (BSCS, 2019–2023) and
-                I'm currently a CMS Developer at The 360 Technologies in Lahore.
+                I'm currently working as a CMS Developer in Lahore.
               </p>
             </div>
 
@@ -134,8 +135,8 @@ function About() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Briefcase size={16} className="mt-0.5 text-ember" />
-                  <span><span className="text-foreground">The 360 Technologies</span><br />
-                    <span className="text-muted-foreground">CMS Developer · Since Feb 2025</span>
+                  <span><span className="text-foreground">CMS Developer</span><br />
+                    <span className="text-muted-foreground">Full-time · Since Feb 2025</span>
                   </span>
                 </li>
               </ul>
@@ -148,13 +149,16 @@ function About() {
                 >
                   <Download size={14} /> Download CV (PDF)
                 </a>
-                <a
-                  href={CALENDLY_URL}
-                  target="_blank" rel="noreferrer"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-background px-5 py-2.5 text-sm hover:bg-surface"
-                >
-                  <CalendarClock size={14} className="text-ember" /> Schedule a meeting
-                </a>
+                <ScheduleMeeting
+                  trigger={
+                    <button
+                      type="button"
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-background px-5 py-2.5 text-sm hover:bg-surface"
+                    >
+                      <CalendarClock size={14} className="text-ember" /> Schedule a meeting
+                    </button>
+                  }
+                />
                 <QuickInquiry
                   trigger={
                     <button

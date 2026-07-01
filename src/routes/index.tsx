@@ -4,7 +4,10 @@ import { ProjectCard } from "@/components/site/ProjectCard";
 import { featured, projects } from "@/lib/projects";
 import { QuickInquiry } from "@/components/site/QuickInquiry";
 import { Testimonials } from "@/components/site/Testimonials";
-import { CALENDLY_URL, CV_URL } from "@/lib/site";
+import { CV_URL } from "@/lib/site";
+import { ScheduleMeeting } from "@/components/site/ScheduleMeeting";
+import { CountUp } from "@/components/site/CountUp";
+import { Reveal } from "@/components/site/Reveal";
 import { ArrowRight, CalendarClock, Download, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -17,11 +20,11 @@ const stack = [
   "React", "PHP", "Git",
 ];
 
-const stats = [
-  { n: "4+", l: "Years shipping" },
-  { n: "160+", l: "Sites launched" },
-  { n: `${projects.length}+`, l: "Live projects" },
-  { n: "98%", l: "On-time delivery" },
+const stats: { end: number; suffix: string; l: string }[] = [
+  { end: 4, suffix: "+", l: "Years experience" },
+  { end: 160, suffix: "+", l: "Sites launched" },
+  { end: projects.length, suffix: "+", l: "Live projects" },
+  { end: 98, suffix: "%", l: "On-time delivery" },
 ];
 
 function Home() {
@@ -38,7 +41,7 @@ function Home() {
               <span className="absolute inset-0 animate-ping rounded-full bg-ember opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-ember" />
             </span>
-            Currently accepting new projects
+            Crafting websites that convert — one project at a time.
           </div>
 
           <h1 className="reveal mt-8 font-display text-6xl leading-[0.95] text-balance sm:text-7xl md:text-8xl lg:text-[9rem]">
@@ -63,14 +66,16 @@ function Home() {
               >
                 View work <ArrowRight size={16} />
               </Link>
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 px-6 py-3 text-sm text-foreground hover:bg-surface transition backdrop-blur"
-              >
-                <CalendarClock size={16} className="text-ember" /> Schedule meeting
-              </a>
+              <ScheduleMeeting
+                trigger={
+                  <button
+                    type="button"
+                    className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 px-6 py-3 text-sm text-foreground hover:bg-surface transition backdrop-blur"
+                  >
+                    <CalendarClock size={16} className="text-ember" /> Schedule meeting
+                  </button>
+                }
+              />
               <QuickInquiry />
             </div>
           </div>
@@ -80,8 +85,6 @@ function Home() {
             <span>Based in Lahore, PK</span>
             <span className="hidden sm:inline text-border">/</span>
             <span>Working worldwide</span>
-            <span className="hidden sm:inline text-border">/</span>
-            <span>The 360 Technologies</span>
             <span className="hidden sm:inline text-border">/</span>
             <span>Since 2022</span>
           </div>
@@ -118,8 +121,7 @@ function Home() {
             <p>
               I started as a WordPress developer in 2022 and have spent the last four years going
               deep on the platforms that power most of the modern web — WordPress, Shopify, Webflow
-              and Wix. Currently building at{" "}
-              <span className="text-foreground">The 360 Technologies</span>.
+              and Wix.
             </p>
             <p>
               I care about the small things: page speed, thoughtful UX, semantic markup, and
@@ -146,11 +148,13 @@ function Home() {
 
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 gap-px border border-border bg-border md:grid-cols-4">
-          {stats.map((s) => (
-            <div key={s.l} className="bg-background p-8">
-              <p className="font-display text-5xl text-ember">{s.n}</p>
+          {stats.map((s, i) => (
+            <Reveal key={s.l} delay={i * 80} className="bg-background p-8">
+              <p className="font-display text-5xl text-ember">
+                <CountUp end={s.end} suffix={s.suffix} />
+              </p>
               <p className="mt-2 text-sm text-muted-foreground">{s.l}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
@@ -232,13 +236,16 @@ function Home() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href={CALENDLY_URL}
-                  target="_blank" rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
-                >
-                  <CalendarClock size={16} /> Schedule a meeting
-                </a>
+                <ScheduleMeeting
+                  trigger={
+                    <button
+                      type="button"
+                      className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
+                    >
+                      <CalendarClock size={16} /> Schedule a meeting
+                    </button>
+                  }
+                />
                 <QuickInquiry
                   trigger={
                     <button

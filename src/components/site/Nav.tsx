@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, CalendarClock } from "lucide-react";
 import { Logo } from "./Logo";
-import { CALENDLY_URL } from "@/lib/site";
+import { ScheduleMeeting } from "./ScheduleMeeting";
 
 const links = [
   { to: "/", label: "Home" },
@@ -48,14 +48,16 @@ export function Nav() {
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-4 py-2 text-sm text-foreground hover:bg-surface transition"
-          >
-            <CalendarClock size={14} className="text-ember" /> Schedule
-          </a>
+          <ScheduleMeeting
+            trigger={
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-4 py-2 text-sm text-foreground hover:bg-surface transition"
+              >
+                <CalendarClock size={14} className="text-ember" /> Schedule
+              </button>
+            }
+          />
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-ember px-5 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 transition"
@@ -88,15 +90,17 @@ export function Nav() {
                 {l.label}
               </Link>
             ))}
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => setOpen(false)}
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full border border-border bg-surface px-5 py-3 text-sm"
-            >
-              <CalendarClock size={14} className="text-ember" /> Schedule meeting
-            </a>
+            <ScheduleMeeting
+              trigger={
+                <button
+                  type="button"
+                  onClick={() => setOpen(false)}
+                  className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-surface px-5 py-3 text-sm"
+                >
+                  <CalendarClock size={14} className="text-ember" /> Schedule meeting
+                </button>
+              }
+            />
             <Link
               to="/contact"
               onClick={() => setOpen(false)}

@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { CalendarClock, Download, Github, Linkedin, Mail } from "lucide-react";
-import { CALENDLY_URL, CV_URL } from "@/lib/site";
+import { CV_URL } from "@/lib/site";
+import { ScheduleMeeting } from "@/components/site/ScheduleMeeting";
 
 export function Footer() {
   return (
@@ -14,13 +15,16 @@ export function Footer() {
               <span className="text-ember">Let's build it right.</span>
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href={CALENDLY_URL}
-                target="_blank" rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-ember px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
-              >
-                <CalendarClock size={14} /> Schedule a meeting
-              </a>
+              <ScheduleMeeting
+                trigger={
+                  <button
+                    type="button"
+                    className="inline-flex items-center gap-2 rounded-full bg-ember px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
+                  >
+                    <CalendarClock size={14} /> Schedule a meeting
+                  </button>
+                }
+              />
               <a
                 href={CV_URL}
                 target="_blank" rel="noreferrer"
@@ -77,9 +81,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Ali Hassaan. Built with care in Lahore.</p>
-          <p className="font-mono">v2.0 — web development studio of one</p>
+        <div className="mt-14 border-t border-border pt-6 text-xs text-muted-foreground">
+          <p>© {new Date().getFullYear()} Ali Hassaan. All rights reserved.</p>
         </div>
       </div>
     </footer>

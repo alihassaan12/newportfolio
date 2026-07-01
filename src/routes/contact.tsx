@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteLayout } from "@/components/site/Layout";
 import { QuickInquiry } from "@/components/site/QuickInquiry";
-import { CALENDLY_URL } from "@/lib/site";
+import { ScheduleMeeting } from "@/components/site/ScheduleMeeting";
+import { sendFormToEmail } from "@/lib/send-form";
 import { CalendarClock, Github, Linkedin, Mail, Phone, MapPin, Send, Check, Zap } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
@@ -26,15 +27,30 @@ export const Route = createFileRoute("/contact")({
 
 function Contact() {
   const [sent, setSent] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", email: "", platform: "WordPress", budget: "", message: "" });
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`New project inquiry — ${form.name}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nPlatform: ${form.platform}\nBudget: ${form.budget}\n\n${form.message}`
-    );
-    window.location.href = `mailto:alihassaanamjad@gmail.com?subject=${subject}&body=${body}`;
+    if (!form.name || !form.email || !form.message) {
+      setErr("Please fill in name, email and project details.");
+      return;
+    }
+    setErr(null);
+    setBusy(true);
+    const res = await sendFormToEmail(`New project inquiry — ${form.name}`, {
+      Name: form.name,
+      Email: form.email,
+      Platform: form.platform,
+      Budget: form.budget || "—",
+      Project: form.message,
+    });
+    setBusy(false);
+    if (!res.ok) {
+      setErr(res.error ?? "Could not send. Please try again.");
+      return;
+    }
     setSent(true);
   };
 
@@ -61,13 +77,16 @@ function Contact() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={CALENDLY_URL}
-              target="_blank" rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
-            >
-              <CalendarClock size={16} /> Schedule a meeting
-            </a>
+            <ScheduleMeeting
+              trigger={
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
+                >
+                  <CalendarClock size={16} /> Schedule a meeting
+                </button>
+              }
+            />
             <QuickInquiry
               trigger={
                 <button
@@ -161,13 +180,14 @@ function Contact() {
               </div>
               <div>
                 <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">Budget (USD)</label>
-                <select value={form.budget} onChange={set("budget")} className={inputCls}>
-                  <option value="">Select a range</option>
-                  <option>Under $1k</option>
-                  <option>$1k – $3k</option>
-                  <option>$3k – $8k</option>
-                  <option>$8k+</option>
-                </select>
+                <input
+                  type="text"
+                  value={form.budget}
+                  onChange={set("budget")}
+                  className={inputCls}
+                  placeholder="e.g. $2,500 or a range you have in mind"
+                  maxLength={80}
+                />
               </div>
             </div>
             <div>
@@ -177,14 +197,16 @@ function Contact() {
                 className={inputCls} placeholder="A quick brief — goals, timeline, links to inspiration…"
               />
             </div>
+            {err && <p className="text-xs text-destructive">{err}</p>}
             <button
               type="submit"
-              className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
+              disabled={busy}
+              className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90 disabled:opacity-70"
             >
-              {sent ? <><Check size={16} /> Email opened</> : <><Send size={16} /> Send inquiry</>}
+              {sent ? <><Check size={16} /> Inquiry sent</> : busy ? "Sending…" : <><Send size={16} /> Send inquiry</>}
             </button>
             <p className="text-xs text-muted-foreground">
-              This opens your email client with the message pre-filled — no data is stored on this site.
+              Your inquiry is emailed directly to alihassaanamjad@gmail.com.
             </p>
           </form>
         </div>
