@@ -63,15 +63,17 @@ function Projects() {
       <section className="relative overflow-hidden border-b border-border">
         <div className="absolute inset-0 ember-glow" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
-          <p className="reveal font-mono text-xs uppercase tracking-widest text-ember">Selected work</p>
+          <p className="reveal font-mono text-xs uppercase tracking-widest text-ember">
+            Selected work
+          </p>
           <h1 className="reveal mt-4 font-display text-6xl leading-[0.95] text-balance md:text-8xl">
             {projects.length} builds,
             <br />
             <span className="italic text-muted-foreground">one developer.</span>
           </h1>
           <p className="reveal mt-8 max-w-2xl text-lg text-muted-foreground">
-            A cross-section of recent client work — organised by industry so you can jump straight to
-            what's relevant. Every card links out to the live site.
+            A cross-section of recent client work — organised by industry so you can jump straight
+            to what's relevant. Every card links out to the live site.
           </p>
         </div>
       </section>
@@ -79,7 +81,8 @@ function Projects() {
       <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
         <div className="mb-14 flex flex-wrap items-center gap-2">
           {filters.map((f) => {
-            const count = f === "All" ? projects.length : projects.filter((p) => p.platform === f).length;
+            const count =
+              f === "All" ? projects.length : projects.filter((p) => p.platform === f).length;
             if (count === 0) return null;
             const isActive = active === f;
             return (
@@ -109,7 +112,9 @@ function Projects() {
           {grouped.map((group) => (
             <div key={group.category}>
               <div className="mb-8 flex items-end justify-between gap-4 border-b border-border pb-4">
-                <h2 className="font-display text-3xl text-foreground md:text-4xl">{group.category}</h2>
+                <h2 className="font-display text-3xl text-foreground md:text-4xl">
+                  {group.category}
+                </h2>
                 <span className="font-mono text-xs text-muted-foreground">
                   {String(group.items.length).padStart(2, "0")} projects
                 </span>

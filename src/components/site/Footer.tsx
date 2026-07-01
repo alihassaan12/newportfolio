@@ -16,14 +16,16 @@ export function Footer() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href={CALENDLY_URL}
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-ember px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
               >
                 <CalendarClock size={14} /> Schedule a meeting
               </a>
               <a
                 href={CV_URL}
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm hover:bg-surface"
               >
                 <Download size={14} /> Download CV
@@ -40,10 +42,26 @@ export function Footer() {
           <div>
             <p className="text-xs uppercase tracking-widest text-muted-foreground">Navigate</p>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link to="/" className="hover:text-ember transition">Home</Link></li>
-              <li><Link to="/about" className="hover:text-ember transition">About</Link></li>
-              <li><Link to="/projects" className="hover:text-ember transition">Work</Link></li>
-              <li><Link to="/contact" className="hover:text-ember transition">Contact</Link></li>
+              <li>
+                <Link to="/" className="hover:text-ember transition">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-ember transition">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" className="hover:text-ember transition">
+                  Work
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-ember transition">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -53,7 +71,8 @@ export function Footer() {
               <li>
                 <a
                   href="https://www.linkedin.com/in/ali-hassaan-full-stack-developer-/"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 hover:text-ember transition"
                 >
                   <Linkedin size={14} /> LinkedIn
@@ -62,7 +81,8 @@ export function Footer() {
               <li>
                 <a
                   href="https://github.com/alihassaan12"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 hover:text-ember transition"
                 >
                   <Github size={14} /> GitHub

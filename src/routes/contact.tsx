@@ -3,7 +3,17 @@ import { useState } from "react";
 import { SiteLayout } from "@/components/site/Layout";
 import { QuickInquiry } from "@/components/site/QuickInquiry";
 import { CALENDLY_URL } from "@/lib/site";
-import { CalendarClock, Github, Linkedin, Mail, Phone, MapPin, Send, Check, Zap } from "lucide-react";
+import {
+  CalendarClock,
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Check,
+  Zap,
+} from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -26,20 +36,28 @@ export const Route = createFileRoute("/contact")({
 
 function Contact() {
   const [sent, setSent] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", platform: "WordPress", budget: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    platform: "WordPress",
+    budget: "",
+    message: "",
+  });
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const subject = encodeURIComponent(`New project inquiry — ${form.name}`);
     const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nPlatform: ${form.platform}\nBudget: ${form.budget}\n\n${form.message}`
+      `Name: ${form.name}\nEmail: ${form.email}\nPlatform: ${form.platform}\nBudget: ${form.budget}\n\n${form.message}`,
     );
     window.location.href = `mailto:alihassaanamjad@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
-  const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
-    setForm((f) => ({ ...f, [k]: e.target.value }));
+  const set =
+    (k: keyof typeof form) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
+      setForm((f) => ({ ...f, [k]: e.target.value }));
 
   const inputCls =
     "w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-ember focus:outline-none focus:ring-2 focus:ring-ember/20 transition";
@@ -63,7 +81,8 @@ function Contact() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href={CALENDLY_URL}
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
             >
               <CalendarClock size={16} /> Schedule a meeting
@@ -105,7 +124,9 @@ function Contact() {
               <Phone className="text-ember mt-0.5" size={20} />
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground">Phone</p>
-                <p className="mt-1 text-sm text-foreground group-hover:text-ember">+92 345 6090010</p>
+                <p className="mt-1 text-sm text-foreground group-hover:text-ember">
+                  +92 345 6090010
+                </p>
               </div>
             </a>
             <div className="flex items-start gap-4 rounded-2xl border border-border bg-surface p-6">
@@ -120,14 +141,16 @@ function Contact() {
             <div className="flex gap-2 pt-2">
               <a
                 href="https://www.linkedin.com/in/ali-hassaan-full-stack-developer-/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-2 transition"
               >
                 <Linkedin size={14} /> LinkedIn
               </a>
               <a
                 href="https://github.com/alihassaan12"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-2 transition"
               >
                 <Github size={14} /> GitHub
@@ -142,15 +165,34 @@ function Contact() {
           >
             <div className="grid gap-5 md:grid-cols-2">
               <div>
-                <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">Name</label>
-                <input required value={form.name} onChange={set("name")} className={inputCls} placeholder="Your full name" />
+                <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">
+                  Name
+                </label>
+                <input
+                  required
+                  value={form.name}
+                  onChange={set("name")}
+                  className={inputCls}
+                  placeholder="Your full name"
+                />
               </div>
               <div>
-                <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">Email</label>
-                <input required type="email" value={form.email} onChange={set("email")} className={inputCls} placeholder="you@company.com" />
+                <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">
+                  Email
+                </label>
+                <input
+                  required
+                  type="email"
+                  value={form.email}
+                  onChange={set("email")}
+                  className={inputCls}
+                  placeholder="you@company.com"
+                />
               </div>
               <div>
-                <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">Platform</label>
+                <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">
+                  Platform
+                </label>
                 <select value={form.platform} onChange={set("platform")} className={inputCls}>
                   <option>WordPress</option>
                   <option>Shopify</option>
@@ -160,7 +202,9 @@ function Contact() {
                 </select>
               </div>
               <div>
-                <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">Budget (USD)</label>
+                <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">
+                  Budget (USD)
+                </label>
                 <select value={form.budget} onChange={set("budget")} className={inputCls}>
                   <option value="">Select a range</option>
                   <option>Under $1k</option>
@@ -171,20 +215,35 @@ function Contact() {
               </div>
             </div>
             <div>
-              <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">Project</label>
+              <label className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">
+                Project
+              </label>
               <textarea
-                required rows={6} value={form.message} onChange={set("message")}
-                className={inputCls} placeholder="A quick brief — goals, timeline, links to inspiration…"
+                required
+                rows={6}
+                value={form.message}
+                onChange={set("message")}
+                className={inputCls}
+                placeholder="A quick brief — goals, timeline, links to inspiration…"
               />
             </div>
             <button
               type="submit"
               className="inline-flex items-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-medium text-primary-foreground hover:opacity-90"
             >
-              {sent ? <><Check size={16} /> Email opened</> : <><Send size={16} /> Send inquiry</>}
+              {sent ? (
+                <>
+                  <Check size={16} /> Email opened
+                </>
+              ) : (
+                <>
+                  <Send size={16} /> Send inquiry
+                </>
+              )}
             </button>
             <p className="text-xs text-muted-foreground">
-              This opens your email client with the message pre-filled — no data is stored on this site.
+              This opens your email client with the message pre-filled — no data is stored on this
+              site.
             </p>
           </form>
         </div>

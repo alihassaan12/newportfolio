@@ -69,7 +69,10 @@ const experience = [
 const skillGroups = [
   { title: "Platforms", items: ["WordPress", "Shopify", "Webflow", "Wix", "WooCommerce"] },
   { title: "Builders", items: ["Elementor", "WPBakery", "Native theme dev", "Custom blocks"] },
-  { title: "Front-end", items: ["HTML5", "CSS3", "Tailwind", "Bootstrap", "JavaScript", "React", "jQuery"] },
+  {
+    title: "Front-end",
+    items: ["HTML5", "CSS3", "Tailwind", "Bootstrap", "JavaScript", "React", "jQuery"],
+  },
   { title: "Back-end & tools", items: ["PHP", "REST APIs", "Git / GitHub", "Figma", "Adobe XD"] },
 ];
 
@@ -124,17 +127,20 @@ function About() {
                 </div>
               </div>
 
-
               <ul className="space-y-4 text-sm">
                 <li className="flex items-start gap-3">
                   <MapPin size={16} className="mt-0.5 text-ember" />
-                  <span><span className="text-foreground">Lahore, Pakistan</span><br />
+                  <span>
+                    <span className="text-foreground">Lahore, Pakistan</span>
+                    <br />
                     <span className="text-muted-foreground">Working with clients worldwide</span>
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Briefcase size={16} className="mt-0.5 text-ember" />
-                  <span><span className="text-foreground">The 360 Technologies</span><br />
+                  <span>
+                    <span className="text-foreground">The 360 Technologies</span>
+                    <br />
                     <span className="text-muted-foreground">CMS Developer · Since Feb 2025</span>
                   </span>
                 </li>
@@ -143,14 +149,16 @@ function About() {
               <div className="mt-6 space-y-2">
                 <a
                   href={CV_URL}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-ember px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90"
                 >
                   <Download size={14} /> Download CV (PDF)
                 </a>
                 <a
                   href={CALENDLY_URL}
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-background px-5 py-2.5 text-sm hover:bg-surface"
                 >
                   <CalendarClock size={14} className="text-ember" /> Schedule a meeting
