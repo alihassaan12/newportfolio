@@ -1,4 +1,4 @@
-const ACCESS_KEY = "00e52d73-d343-4c4d-8c6d-44b2bf54ae12";
+const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_KEY;
 
 export async function sendFormToEmail(
   subject: string,
