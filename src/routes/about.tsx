@@ -4,7 +4,7 @@ import { QuickInquiry } from "@/components/site/QuickInquiry";
 import { ScheduleMeeting } from "@/components/site/ScheduleMeeting";
 import { CV_URL } from "@/lib/site";
 import { CalendarClock, Download, MapPin, Briefcase } from "lucide-react";
-import aliPortrait from "@/assets/ali-portrait.png.asset.json";
+import aliPortrait from "@/assets/ali-portrait.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -110,8 +110,7 @@ function About() {
               {/* Profile monogram — swap for a real headshot when ready */}
               <div className="mb-6 flex items-center gap-4">
                 <div className="relative size-16 shrink-0">
-                  <img
-                    src={aliPortrait.url}
+                  <img src={aliPortrait}
                     alt="Ali Hassaan — Full-Stack Web Developer"
                     width={64}
                     height={64}
