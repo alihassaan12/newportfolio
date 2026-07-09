@@ -1,7 +1,6 @@
 // Sends form submissions to alihassaanamjad@gmail.com via FormSubmit.co (no backend required).
 // First-ever POST triggers a one-time email confirmation link to the inbox owner.
-// const ENDPOINT = "https://formsubmit.co/ajax/alihassaanamjad@gmail.com";
-const ENDPOINT = "/api/send-email";
+const ENDPOINT = "https://formsubmit.co/ajax/alihassaanamjad@gmail.com";
 
 export async function sendFormToEmail(
   subject: string,
