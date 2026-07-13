@@ -56,7 +56,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/ali-hassaan-full-stack-developer-/"
+                  href="https://www.linkedin.com/in/ali-hassaan-dev"
                   target="_blank" rel="noreferrer"
                   className="inline-flex items-center gap-2 hover:text-ember transition"
                 >

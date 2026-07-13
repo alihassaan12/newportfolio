@@ -138,7 +138,7 @@ function Contact() {
 
             <div className="flex gap-2 pt-2">
               <a
-                href="https://www.linkedin.com/in/ali-hassaan-full-stack-developer-/"
+                href="https://www.linkedin.com/in/ali-hassaan-dev"
                 target="_blank" rel="noreferrer"
                 className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-2 transition"
               >
