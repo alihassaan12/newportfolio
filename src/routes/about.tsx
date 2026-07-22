@@ -29,8 +29,8 @@ export const Route = createFileRoute("/about")({
 const experience = [
   {
     company: "The 360 Technologies",
-    role: "CMS Developer",
-    period: "Feb 2025 — Present",
+    role: "CMS Developer - Team Lead",
+    period: "August 2025 — Present",
     location: "Lahore, PK",
     stack: "WordPress · Shopify · Webflow · WooCommerce · Wix · APIs · Git",
     points: [
@@ -43,7 +43,7 @@ const experience = [
   {
     company: "ID Logix",
     role: "CMS Developer",
-    period: "Feb 2024 — Jan 2025",
+    period: "January 2024 — July 2025",
     location: "Lahore, PK",
     stack: "WordPress · Shopify · Webflow · WooCommerce · Wix",
     points: [
@@ -56,22 +56,23 @@ const experience = [
   {
     company: "Hello World Technologies",
     role: "WordPress Developer",
-    period: "Aug 2022 — Sep 2023",
+    period: "May 2022 — October 2023",
     location: "Rahim Yar Khan, PK",
-    stack: "WordPress · JS · HTML · CSS · Bootstrap · jQuery · React",
+    stack: "WordPress · Elementor · WooCommerce · WPBakery",
     points: [
-      "Developed multi-vendor eCommerce and custom sites from Figma / XD designs.",
-      "Built product filtering, search and dynamic content features.",
-      "Used React on high-performance projects; refined design systems.",
+     "Developed custom WordPress and WooCommerce websites from Figma / XD designs.",
+      "Built responsive websites using Elementor, WPBakery, and custom WordPress solutions.",
+      "Customized WordPress themes and plugins to deliver client-specific functionality.",
+      "Optimized WordPress websites for performance, SEO, and enhanced user experience.",
     ],
   },
 ];
 
 const skillGroups = [
-  { title: "Platforms", items: ["WordPress", "Shopify", "Webflow", "Wix", "WooCommerce"] },
+  { title: "Platforms", items: ["WordPress", "Shopify", "Webflow", "Wix", "WooCommerce", "GHL"] },
   { title: "Builders", items: ["Elementor", "WPBakery", "Native theme dev", "Custom blocks"] },
-  { title: "Front-end", items: ["HTML5", "CSS3", "Tailwind", "Bootstrap", "JavaScript", "React", "jQuery"] },
-  { title: "Back-end & tools", items: ["PHP", "REST APIs", "Git / GitHub", "Figma", "Adobe XD"] },
+  { title: "Front-end", items: ["HTML5", "CSS3", "Tailwind", "Bootstrap", "JavaScript", "React", "jQuery", "Liquid"] },
+  { title: "Back-end & tools", items: ["PHP", "REST APIs", "GitHub", "Payment Gateway Integration", "Third-Party Integrations"] },
 ];
 
 function About() {
