@@ -136,7 +136,7 @@ function About() {
                 <li className="flex items-start gap-3">
                   <Briefcase size={16} className="mt-0.5 text-ember" />
                   <span><span className="text-foreground">CMS Developer</span><br />
-                    <span className="text-muted-foreground">Full-time · Since Feb 2025</span>
+                    <span className="text-muted-foreground">Full-time · Since Feb 2022</span>
                   </span>
                 </li>
               </ul>
